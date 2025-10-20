@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base.LayoutCalculator", "Base.LayoutCalculator\Base.LayoutCalculator.csproj", "{553A803B-A064-4275-997A-D9E9A3609DF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base.LayoutCalculator.Common", "Base.LayoutCalculator.Common\Base.LayoutCalculator.Common.csproj", "{DB1ED255-4365-45C4-9128-6423A49DBAD0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{553A803B-A064-4275-997A-D9E9A3609DF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{553A803B-A064-4275-997A-D9E9A3609DF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{553A803B-A064-4275-997A-D9E9A3609DF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{553A803B-A064-4275-997A-D9E9A3609DF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB1ED255-4365-45C4-9128-6423A49DBAD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB1ED255-4365-45C4-9128-6423A49DBAD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB1ED255-4365-45C4-9128-6423A49DBAD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB1ED255-4365-45C4-9128-6423A49DBAD0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76B114A1-1B74-4F7A-A464-7F016A2282B7}
+	EndGlobalSection
+EndGlobal
