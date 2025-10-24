@@ -9,7 +9,7 @@ public class BuildingMats : Tile
 
     public override char Display => 'M';
 
-    public override void ApplyMultipliers(double[,,] multiplierMap, int x, int y, int z)
+    public override void ApplyMultipliers(double[] multiplierMap, int zOffset, int columns, int x, int y)
     {
         
     }

@@ -1,26 +1,34 @@
 ﻿using System.Collections.Generic;
 
-namespace Base.LayoutCalculator.Common.Bases.Base1;
+namespace Base.LayoutCalculator.Common.Bases.Base6;
 
-public class Booster : Tile
+public class MaterialBooster : Tile
 {
-    public const string TileName = nameof(Booster);
-
-    public override string Name => TileName;
+    public override string Name => nameof(MaterialBooster);
     public override char Display => '+';
-    public override string Category => BuildingMats.TileName;
-    public override int MaxRange => 1;
+    public override string Category => BuildingMaterials.TileName;
+    public override int MaxRange => 2;
 
     public override void ApplyMultipliers(double[] multipliers, int zOffset, int columns, int x, int y)
     {
+        multipliers[zOffset + (y - 2) * columns + x - 2]      *= 2;
         multipliers[zOffset + (y - 1) * columns + x - 1]      *= 2;
+        multipliers[zOffset + (y - 2) * columns + x    ]      *= 2;
         multipliers[zOffset + (y - 1) * columns + x    ]      *= 2;
         multipliers[zOffset + (y - 1) * columns + x + 1]      *= 2;
+        multipliers[zOffset + (y - 2) * columns + x + 2]      *= 2;
+
+        multipliers[zOffset + (y    ) * columns + x - 2]      *= 2;
         multipliers[zOffset + (y    ) * columns + x - 1]      *= 2;
         multipliers[zOffset + (y    ) * columns + x + 1]      *= 2;
+        multipliers[zOffset + (y    ) * columns + x + 2]      *= 2;
+
         multipliers[zOffset + (y + 1) * columns + x - 1]      *= 2;
+        multipliers[zOffset + (y + 2) * columns + x - 2]      *= 2;
         multipliers[zOffset + (y + 1) * columns + x    ]      *= 2;
+        multipliers[zOffset + (y + 2) * columns + x    ]      *= 2;
         multipliers[zOffset + (y + 1) * columns + x + 1]      *= 2;
+        multipliers[zOffset + (y + 2) * columns + x + 2]      *= 2;
     }
 
     public override double GetProduction()
